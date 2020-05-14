@@ -1,0 +1,3 @@
+Primitive values by rule are not objects. However when we treat a primitive type like an object, such as getting the .length of a string, JavaScript will wrap that primitive type into an object. This new object is then linked to the corresponding built-in .prototype, so that we can utilize prototype methods on primitive types.
+
+What we can't see behind the scenes is JavaScript is doing something called autoboxing. Autoboxing happens automatically whenever we treat a primitive type like an object. In other words, whenever we try to .length on a string for example or toString a number, or get the value of a Boolean. Which means we are dotting into these primitives.
